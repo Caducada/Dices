@@ -1,7 +1,7 @@
 from score_sheet import ScoreSheet, ScoreSlotsEnum, Player
 from calculate_score import ScoreSlotsEnum, CalculateScore
-from Dices.regular_dice import create_regular_six_sided_dice, Side
-from Dices.dice import Face
+from dices.regular_dice import create_regular_six_sided_dice, Side
+from dices.dice import Face
 from functools import wraps
 
 class Yatzy:
