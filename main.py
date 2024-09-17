@@ -60,6 +60,7 @@ def main():
                         poäng += value
                     for value in temp_result:
                         poäng += value
+                    print(saved_result)
                     print("Du fick " + str(poäng)+ " poäng!")
                     exit()
                 else:
