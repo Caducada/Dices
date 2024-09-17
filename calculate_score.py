@@ -1,5 +1,5 @@
-from Dices.dice import Dice
-from Dices.regular_dice import RegularDiceValuesEnum
+from dices.dice import Dice
+from dices.regular_dice import RegularDiceValuesEnum
 from score_sheet import ScoreSlotsEnum
 from collections import defaultdict
 from typing import Callable

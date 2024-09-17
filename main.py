@@ -1,5 +1,5 @@
-from Dices.regular_dice import create_regular_six_sided_dice
-from Dices.dice import Dice
+from dices.regular_dice import create_regular_six_sided_dice
+from dices.dice import Dice
 
 #########################################################
 # Ska rensas
