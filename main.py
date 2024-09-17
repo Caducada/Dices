@@ -42,7 +42,7 @@ def main():
         temp_result = []
         for dice in round_2:
             temp_result.append(numbers[str(dice._side_up._value).split(".",1)[1]])
-        print(saved_result)
+        print("Saved dice: " + str(saved_result))
         val_2 = input("Vänligen skriv vilka tärningar du vill spara och tryck sedan enter för att avsluta\n")
         for siffra in val_2:
             if siffra in rerolls:
@@ -61,7 +61,7 @@ def main():
                 poäng += value
             for value in temp_result:
                 poäng += value
-            print(saved_result)
+            print("Saved dice: " + str(saved_result))
             print("Du fick " + str(poäng)+ " poäng!")
             exit()
         else:
@@ -70,12 +70,14 @@ def main():
                 poäng += value
             for value in temp_result:
                 poäng += value
+            print("Saved dice: " + str(saved_result))
             print("Du fick " + str(poäng)+ " poäng!")
             exit()
     else:
         poäng = 0
         for value in temp_result:
             poäng += value
+        print("Saved dice: " + str(saved_result))
         print("Du fick " + str(poäng)+ " poäng!")
         exit()
  
