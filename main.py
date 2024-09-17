@@ -68,8 +68,6 @@ def main():
             poäng = 0
             for value in saved_result:
                 poäng += value
-            for value in temp_result:
-                poäng += value
             print("Saved dice: " + str(saved_result))
             print("Du fick " + str(poäng)+ " poäng!")
             exit()
