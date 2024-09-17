@@ -159,12 +159,12 @@ class CalculateScore:
     def get_method_by_ScoreSlotsEnum(self, slot:ScoreSlotsEnum) -> Callable[[list[Dice]],int]|None:
         """Returns method for current class given a specific ScoreSlotsEnum"""
         match slot:
-            case ScoreSlotsEnum.ONES: self.ones
-            case ScoreSlotsEnum.TWOS: self.twos
-            case ScoreSlotsEnum.THREES: self.threes
-            case ScoreSlotsEnum.FOURS: self.fours
-            case ScoreSlotsEnum.FIVES: self.fives
-            case ScoreSlotsEnum.SIXES: self.sixes
+            case ScoreSlotsEnum.ONES: return self.ones
+            case ScoreSlotsEnum.TWOS: return self.twos
+            case ScoreSlotsEnum.THREES :return self.threes
+            case ScoreSlotsEnum.FOURS:return self.fours
+            case ScoreSlotsEnum.FIVES:return self.fives
+            case ScoreSlotsEnum.SIXES:return self.sixes
             case ScoreSlotsEnum.ONE_PAIR: self.one_pair
             case ScoreSlotsEnum.TWO_PAIR: self.two_pais
             case ScoreSlotsEnum.THREE_OF_A_KIND: self.three_of_a_kind
